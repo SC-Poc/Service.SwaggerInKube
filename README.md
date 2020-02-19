@@ -10,3 +10,5 @@ To run service need to specify environment variables:
 # Using
 After start service automatically searches all Pods in specified namespaces. Service provides WEB UI at 5000 port with Swagger interfaces for each Pod.
 Service assumes what swgeer.json file should be hosted by /swagger/v1/swagger.json offset from 80 port in each Pod.
+
+Target Services in Subs should give CORS allow so that the web application can load Swagger.json from a third-party domain
